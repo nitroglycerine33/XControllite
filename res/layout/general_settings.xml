@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/settingsFragmentStyle">
+
+    <com.eclipse.xcontrollite.settings.CheckboxSetting
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:title="@string/ram_bar_title"
+            android:summary="@string/ram_bar_summary"
+            android:key="ram_usage_bar"
+            android:defaultValue="true"
+            />
+
+</LinearLayout>

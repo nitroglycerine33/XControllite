@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:eclipse="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+    <LinearLayout
+            style="@style/settingsFragmentStyle">
+
+        <com.eclipse.xcontrollite.settings.UrlSetting
+                android:id="@+id/eclipse"
+                android:title="@string/eclipse_website_title"
+                android:summary="@string/eclipse_website_summary"
+                eclipse:url="@string/url_eclipse"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        <com.eclipse.xcontrollite.settings.UrlSetting
+                android:id="@+id/eclipse_donate"
+                android:title="@string/donate"
+                android:summary="@string/donate_eclipse_summary"
+                eclipse:url="@string/url_eclipse_donate"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        <com.eclipse.xcontrollite.settings.UrlSetting
+                android:id="@+id/eclipse_twitter"
+                android:title="@string/eclipse_twitter_title"
+                android:summary="@string/eclipse_twitter_summary"
+                eclipse:url="@string/url_twitter"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:eclipse="http://schemas.android.com/apk/res-auto"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout style="@style/settingsFragmentStyle">
+
+        <com.eclipse.xcontrollite.widgets.CategorySeparator
+                style="@style/defaultSize"
+                android:title="@string/category_general"/>
+
+        <com.eclipse.xcontrollite.settings.CheckboxSetting
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:title="@string/brightness_slider_title"
+                android:summary="@string/brightness_slider_summary"
+                android:key="statusbar_enable_brightness_slider"
+                android:defaultValue="true"
+                />
+
+        <com.eclipse.xcontrollite.widgets.CategorySeparator
+                style="@style/defaultSize"
+                android:title="@string/category_statusbar_notification"/>
+
+
+        <com.eclipse.xcontrollite.settings.CheckboxSetting
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:title="@string/notification_count_title"
+                android:summary="@string/notification_count_summary"
+                android:key="status_bar_notif_count"
+                android:defaultValue="true"
+                />
+
+    </LinearLayout>
+
+</ScrollView>
